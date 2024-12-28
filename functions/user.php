@@ -31,7 +31,7 @@ function updateUserProfile($id, $name, $email, $gender, $birthdate, $ktp, $phone
                 tanggal_lahir = :birthdate,
                 no_ktp = :ktp,
                 no_telepon = :phone,
-                alamat = :address,
+                alamat = :address
             WHERE id_user = :id";
     $stmt = $conn->prepare($sql);
     $stmt->execute([
